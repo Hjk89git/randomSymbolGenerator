@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet"></style>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+    <title>RandomSymbolGenerator</title>
+</head>
+<body>
+    <header class="app-header">
+        <div class="block">
+            <p class="text"></p>
+        </div>
+
+        <button class="btn">generate</button>
+
+        <script>
+
+            const buttonNode = document.querySelector('.btn');
+            const textNode = document.querySelector('.text');
+            
+            buttonNode.addEventListener("click", function rand() {
+                rnd = Math.random().toString(36).substr(2, 8);
+                textNode.innerHTML = rnd;
+            });
+            
+       </script>
+        
+    </header>
+    
+</body>
+</html>
